@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7A1C8F08E55F85266691CD003FBAA5FC /* PayCardsRecognizer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8496E2110620B18BFBEC20BF891B3739 /* Build configuration list for PBXAggregateTarget "PayCardsRecognizer" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = PayCardsRecognizer;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0426B51AD48CAE22DDB8FA0C17A959CB /* RecognizedDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74EBD436941E66A79E1B62C1AAAC36C /* RecognizedDigits.swift */; };
+		10DA7B621B1361066BFBE96EAA8357FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		13A44EF1F6B380838BC63543981C3AFA /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D4AAD6D018A23245CE2C6A0AE3D7F3 /* CornerView.swift */; };
+		13AD39DFFDA7AA827C1CEDD6A39B7D5B /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6BAF06C28C0964C2749A64F7B460A /* PredictionResult.swift */; };
+		1987E5ADB944AE43C9568AD10657C16F /* ModelOutputExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A76DFA731F0E8294C29EEC0DCA200 /* ModelOutputExtensions.swift */; };
+		1FB9E094C48778BADF2BB7A1E03ABB67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3769ACF53DA691522BC5F2B6CD1BFBB1 /* Pods-blinkcard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6425947D660BCEA708D22822B24FEDD2 /* Pods-blinkcard-dummy.m */; };
+		44C597CD434F5EB3E86D57F3682A0C1E /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04CC563E7F5A40AA38C4261AFF24F4 /* PreviewView.swift */; };
+		5129405534F7FEC29D3A44DEB17B4A61 /* ScanStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D5DA9C6FA1D903A02C61161F118F0E /* ScanStats.swift */; };
+		54F9865BCE5985E482A457E7D5A18A07 /* RecognizeNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B873C30B902201E9D354240073532E /* RecognizeNumbers.swift */; };
+		5B82220D514B5E106F75C14FC5AB8286 /* CardScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F928BFD8E09EF3BA626678B0284AF14 /* CardScan-dummy.m */; };
+		5D30C57383C15347F68B8B981F79A708 /* FindFourOcr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E76EC27EB73B01E05A73F86CB3439D /* FindFourOcr.swift */; };
+		67A5348C83554BB49DE4D60970031A6E /* Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CEE308DB2DFBBF9FB7AA89886FA78C /* Expiry.swift */; };
+		796A16D2E9EA93FDCA1CE2E2B7720177 /* Pods-blinkcard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD58BCC484BF6E53659770EFEF6AD73 /* Pods-blinkcard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		845DA83BC5D8A69B7ECEC7808A413C65 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C528A7F9603559B01CF88E3D319657 /* Torch.swift */; };
+		89A65B1408EB250FC3358ADD8C928728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6884D74AF76D158A6BD0F922526E04 /* Assets.xcassets */; };
+		8E4450A85DA74D0E8C308B6E4B8FED39 /* CardScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84DA0F4D05BBF43C508C02A9FC73FC4 /* CardScan.storyboard */; };
+		9551A885A6FB2AF78A905E7824ABD57A /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB50C3526F37401B2A5807C83AB64A1 /* ScanViewController.swift */; };
+		96F9A921C7F989480733C4A690865FEA /* FindFour.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B96662B21CCBC36C93187BA508959 /* FindFour.mlmodel */; };
+		9D5DA8AFE5EE609731F80AA0B3B5250D /* PostDetectionAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249659B1967191CC3378DB988381430 /* PostDetectionAlgorithm.swift */; };
+		9DA30827305B9F86BD245A1240C25CC3 /* CreditCardUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F398055F9563C84CAE134FECCA6E7AC3 /* CreditCardUtils.swift */; };
+		9F828B40493A1ACC7DF0CDF2AB505633 /* DetectedBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9AC6DFF6AFEEF01414FCC330B67337 /* DetectedBox.swift */; };
+		BAF6C09701299046300F296AC6D80717 /* CardScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E401C36FBF726408D0F902161F7BA1A4 /* CardScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEAABCD9D434FA0E5C08DE09B965A2D /* FourRecognize.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0281449B2D1035A843E29DB0C7B83A0B /* FourRecognize.mlmodel */; };
+		DA8D51D963A0FD3BAE36F55E1CC52A83 /* Ocr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45E98F1088448E35AB795D100701AF5 /* Ocr.swift */; };
+		F5E9A561313BD72CFFFC31560E48FB4C /* UIImage+pixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381DED22AD1367B410E4660C34A2780F /* UIImage+pixelBuffer.swift */; };
+		F9EA5143118537188BD41A644769D47D /* VideoFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8518225F5346E0626D89957F310B9B93 /* VideoFeed.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FCFBE717AD1C65BB628A62A1B448101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A1C8F08E55F85266691CD003FBAA5FC;
+			remoteInfo = PayCardsRecognizer;
+		};
+		FE992681759AD2198B1E859A5BED458E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A35B702D709EA37681B6545A4E1EF1B;
+			remoteInfo = CardScan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0281449B2D1035A843E29DB0C7B83A0B /* FourRecognize.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; name = FourRecognize.mlmodel; path = CardScan/Classes/FourRecognize.mlmodel; sourceTree = "<group>"; };
+		06C17C75C1315502A21A260E55721045 /* CardScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CardScan-Info.plist"; sourceTree = "<group>"; };
+		0AD58BCC484BF6E53659770EFEF6AD73 /* Pods-blinkcard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-blinkcard-umbrella.h"; sourceTree = "<group>"; };
+		0EEFDB093A06CEFD27D1BE5D3D4B8990 /* CardScan.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CardScan.xcconfig; sourceTree = "<group>"; };
+		15C528A7F9603559B01CF88E3D319657 /* Torch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Torch.swift; path = CardScan/Classes/Torch.swift; sourceTree = "<group>"; };
+		2B09BED1C651A24355C2FC29F8580C70 /* Pods-blinkcard-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blinkcard-Info.plist"; sourceTree = "<group>"; };
+		2B6884D74AF76D158A6BD0F922526E04 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CardScan/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		34C6BAF06C28C0964C2749A64F7B460A /* PredictionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PredictionResult.swift; path = CardScan/Classes/PredictionResult.swift; sourceTree = "<group>"; };
+		373201EE0A38418BD624B69598D53518 /* Pods-blinkcard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-blinkcard-acknowledgements.plist"; sourceTree = "<group>"; };
+		381DED22AD1367B410E4660C34A2780F /* UIImage+pixelBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+pixelBuffer.swift"; path = "CardScan/Classes/UIImage+pixelBuffer.swift"; sourceTree = "<group>"; };
+		3D0034ED186C1047F6F03DD5E45C6B50 /* PayCardsRecognizer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayCardsRecognizer.framework; path = Source/PayCardsRecognizer.framework; sourceTree = "<group>"; };
+		47E76EC27EB73B01E05A73F86CB3439D /* FindFourOcr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FindFourOcr.swift; path = CardScan/Classes/FindFourOcr.swift; sourceTree = "<group>"; };
+		4C7D6E5AC7B418CAD588C903BC35E567 /* CardScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CardScan.modulemap; sourceTree = "<group>"; };
+		515E5AD22D242204A7705B6D1995F256 /* PayCardsRecognizer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayCardsRecognizer.xcconfig; sourceTree = "<group>"; };
+		5C2B96662B21CCBC36C93187BA508959 /* FindFour.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; name = FindFour.mlmodel; path = CardScan/Classes/FindFour.mlmodel; sourceTree = "<group>"; };
+		6425947D660BCEA708D22822B24FEDD2 /* Pods-blinkcard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-blinkcard-dummy.m"; sourceTree = "<group>"; };
+		6F928BFD8E09EF3BA626678B0284AF14 /* CardScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CardScan-dummy.m"; sourceTree = "<group>"; };
+		704FD45B9A3CEB394F814C7DA9401DB5 /* CardScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CardScan.framework; path = CardScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B873C30B902201E9D354240073532E /* RecognizeNumbers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizeNumbers.swift; path = CardScan/Classes/RecognizeNumbers.swift; sourceTree = "<group>"; };
+		81D5DA9C6FA1D903A02C61161F118F0E /* ScanStats.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanStats.swift; path = CardScan/Classes/ScanStats.swift; sourceTree = "<group>"; };
+		8518225F5346E0626D89957F310B9B93 /* VideoFeed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoFeed.swift; path = CardScan/Classes/VideoFeed.swift; sourceTree = "<group>"; };
+		9249659B1967191CC3378DB988381430 /* PostDetectionAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PostDetectionAlgorithm.swift; path = CardScan/Classes/PostDetectionAlgorithm.swift; sourceTree = "<group>"; };
+		98CEE308DB2DFBBF9FB7AA89886FA78C /* Expiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expiry.swift; path = CardScan/Classes/Expiry.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8BB7B7777651E0F29F08C00C28F3CC3 /* Pods-blinkcard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-blinkcard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF76447C5BDD4D4FC8E65C0B75E8514B /* CardScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardScan-prefix.pch"; sourceTree = "<group>"; };
+		B365A9B8345733D9BB2BF974C651557A /* Pods-blinkcard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-blinkcard-frameworks.sh"; sourceTree = "<group>"; };
+		B74EBD436941E66A79E1B62C1AAAC36C /* RecognizedDigits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecognizedDigits.swift; path = CardScan/Classes/RecognizedDigits.swift; sourceTree = "<group>"; };
+		B9D4AAD6D018A23245CE2C6A0AE3D7F3 /* CornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CornerView.swift; path = CardScan/Classes/CornerView.swift; sourceTree = "<group>"; };
+		BCB50C3526F37401B2A5807C83AB64A1 /* ScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanViewController.swift; path = CardScan/Classes/ScanViewController.swift; sourceTree = "<group>"; };
+		D03EE86B994D57C23D71A7AA0E33501A /* Pods-blinkcard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blinkcard.release.xcconfig"; sourceTree = "<group>"; };
+		D1EDCEEC7FF623AE26423AE9F2FDD051 /* Pods_blinkcard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_blinkcard.framework; path = "Pods-blinkcard.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27C0F73A1A31193D7794FEB1EEA90C3 /* Pods-blinkcard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-blinkcard.debug.xcconfig"; sourceTree = "<group>"; };
+		D84DA0F4D05BBF43C508C02A9FC73FC4 /* CardScan.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CardScan.storyboard; path = CardScan/Assets/CardScan.storyboard; sourceTree = "<group>"; };
+		DC7702ACE69AC648086C0C02EF647DAA /* Pods-blinkcard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-blinkcard.modulemap"; sourceTree = "<group>"; };
+		DC8A76DFA731F0E8294C29EEC0DCA200 /* ModelOutputExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelOutputExtensions.swift; path = CardScan/Classes/ModelOutputExtensions.swift; sourceTree = "<group>"; };
+		E401C36FBF726408D0F902161F7BA1A4 /* CardScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CardScan-umbrella.h"; sourceTree = "<group>"; };
+		E45E98F1088448E35AB795D100701AF5 /* Ocr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ocr.swift; path = CardScan/Classes/Ocr.swift; sourceTree = "<group>"; };
+		ED04CC563E7F5A40AA38C4261AFF24F4 /* PreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = CardScan/Classes/PreviewView.swift; sourceTree = "<group>"; };
+		EE9AC6DFF6AFEEF01414FCC330B67337 /* DetectedBox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DetectedBox.swift; path = CardScan/Classes/DetectedBox.swift; sourceTree = "<group>"; };
+		F398055F9563C84CAE134FECCA6E7AC3 /* CreditCardUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardUtils.swift; path = CardScan/Classes/CreditCardUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A736D083148064BB7B1232208C272CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DA7B621B1361066BFBE96EAA8357FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0142DA744904405AA5FE0CB52AAC3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB9E094C48778BADF2BB7A1E03ABB67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094412E4C45E4E34E9228190C818018F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D0034ED186C1047F6F03DD5E45C6B50 /* PayCardsRecognizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1933D9F72E846546B8B2C9BCC9926C8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D57C296202B4249B650D20E34B423770 /* CardScan */,
+				5900DC9612D9B75DD514CBAEF57D54A6 /* PayCardsRecognizer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1F02A977FEFACEA7A1974B842A71520E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D6E5AC7B418CAD588C903BC35E567 /* CardScan.modulemap */,
+				0EEFDB093A06CEFD27D1BE5D3D4B8990 /* CardScan.xcconfig */,
+				6F928BFD8E09EF3BA626678B0284AF14 /* CardScan-dummy.m */,
+				06C17C75C1315502A21A260E55721045 /* CardScan-Info.plist */,
+				AF76447C5BDD4D4FC8E65C0B75E8514B /* CardScan-prefix.pch */,
+				E401C36FBF726408D0F902161F7BA1A4 /* CardScan-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CardScan";
+			sourceTree = "<group>";
+		};
+		4CE092B888EEDCFB62CC2CB403D8F154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				704FD45B9A3CEB394F814C7DA9401DB5 /* CardScan.framework */,
+				D1EDCEEC7FF623AE26423AE9F2FDD051 /* Pods_blinkcard.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5900DC9612D9B75DD514CBAEF57D54A6 /* PayCardsRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				094412E4C45E4E34E9228190C818018F /* Frameworks */,
+				CFEADA39064905694886859517A2ACF9 /* Support Files */,
+			);
+			name = PayCardsRecognizer;
+			path = PayCardsRecognizer;
+			sourceTree = "<group>";
+		};
+		74890CA107685EE2C78262E5109F6652 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B9D4AAD6D018A23245CE2C6A0AE3D7F3 /* CornerView.swift */,
+				F398055F9563C84CAE134FECCA6E7AC3 /* CreditCardUtils.swift */,
+				EE9AC6DFF6AFEEF01414FCC330B67337 /* DetectedBox.swift */,
+				98CEE308DB2DFBBF9FB7AA89886FA78C /* Expiry.swift */,
+				5C2B96662B21CCBC36C93187BA508959 /* FindFour.mlmodel */,
+				47E76EC27EB73B01E05A73F86CB3439D /* FindFourOcr.swift */,
+				0281449B2D1035A843E29DB0C7B83A0B /* FourRecognize.mlmodel */,
+				DC8A76DFA731F0E8294C29EEC0DCA200 /* ModelOutputExtensions.swift */,
+				E45E98F1088448E35AB795D100701AF5 /* Ocr.swift */,
+				9249659B1967191CC3378DB988381430 /* PostDetectionAlgorithm.swift */,
+				34C6BAF06C28C0964C2749A64F7B460A /* PredictionResult.swift */,
+				ED04CC563E7F5A40AA38C4261AFF24F4 /* PreviewView.swift */,
+				B74EBD436941E66A79E1B62C1AAAC36C /* RecognizedDigits.swift */,
+				78B873C30B902201E9D354240073532E /* RecognizeNumbers.swift */,
+				81D5DA9C6FA1D903A02C61161F118F0E /* ScanStats.swift */,
+				BCB50C3526F37401B2A5807C83AB64A1 /* ScanViewController.swift */,
+				15C528A7F9603559B01CF88E3D319657 /* Torch.swift */,
+				381DED22AD1367B410E4660C34A2780F /* UIImage+pixelBuffer.swift */,
+				8518225F5346E0626D89957F310B9B93 /* VideoFeed.swift */,
+				A98192D0D00E39C33E382AA0C1E12CBD /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A98192D0D00E39C33E382AA0C1E12CBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B6884D74AF76D158A6BD0F922526E04 /* Assets.xcassets */,
+				D84DA0F4D05BBF43C508C02A9FC73FC4 /* CardScan.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B8E3CF933A5168061341856EF6AD4FAB /* Pods-blinkcard */ = {
+			isa = PBXGroup;
+			children = (
+				DC7702ACE69AC648086C0C02EF647DAA /* Pods-blinkcard.modulemap */,
+				A8BB7B7777651E0F29F08C00C28F3CC3 /* Pods-blinkcard-acknowledgements.markdown */,
+				373201EE0A38418BD624B69598D53518 /* Pods-blinkcard-acknowledgements.plist */,
+				6425947D660BCEA708D22822B24FEDD2 /* Pods-blinkcard-dummy.m */,
+				B365A9B8345733D9BB2BF974C651557A /* Pods-blinkcard-frameworks.sh */,
+				2B09BED1C651A24355C2FC29F8580C70 /* Pods-blinkcard-Info.plist */,
+				0AD58BCC484BF6E53659770EFEF6AD73 /* Pods-blinkcard-umbrella.h */,
+				D27C0F73A1A31193D7794FEB1EEA90C3 /* Pods-blinkcard.debug.xcconfig */,
+				D03EE86B994D57C23D71A7AA0E33501A /* Pods-blinkcard.release.xcconfig */,
+			);
+			name = "Pods-blinkcard";
+			path = "Target Support Files/Pods-blinkcard";
+			sourceTree = "<group>";
+		};
+		BA6D7CD7BE4B03BCDA7E9CB4ABF638D2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8E3CF933A5168061341856EF6AD4FAB /* Pods-blinkcard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1933D9F72E846546B8B2C9BCC9926C8A /* Pods */,
+				4CE092B888EEDCFB62CC2CB403D8F154 /* Products */,
+				BA6D7CD7BE4B03BCDA7E9CB4ABF638D2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEADA39064905694886859517A2ACF9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				515E5AD22D242204A7705B6D1995F256 /* PayCardsRecognizer.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PayCardsRecognizer";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D57C296202B4249B650D20E34B423770 /* CardScan */ = {
+			isa = PBXGroup;
+			children = (
+				74890CA107685EE2C78262E5109F6652 /* Core */,
+				1F02A977FEFACEA7A1974B842A71520E /* Support Files */,
+			);
+			name = CardScan;
+			path = CardScan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9641A6A35DDF6C3C5EAA489AA628702 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF6C09701299046300F296AC6D80717 /* CardScan-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB1D0D9FC17EDA77631AF82E6E61C11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796A16D2E9EA93FDCA1CE2E2B7720177 /* Pods-blinkcard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DE3A213BC276F32BA58662A737EEB2F /* Pods-blinkcard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A732D720F5C1EF4CB08B8DD39016107B /* Build configuration list for PBXNativeTarget "Pods-blinkcard" */;
+			buildPhases = (
+				DAB1D0D9FC17EDA77631AF82E6E61C11 /* Headers */,
+				5D7C4F8250DCF647645077C6D7CCB80A /* Sources */,
+				A736D083148064BB7B1232208C272CF4 /* Frameworks */,
+				E65D4E02C069C6B0FEDB814567228CA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2F5392378A3BC3EFB925A122742CF55 /* PBXTargetDependency */,
+				ABAC07803ED79F0F57E9ED6237AE9A92 /* PBXTargetDependency */,
+			);
+			name = "Pods-blinkcard";
+			productName = "Pods-blinkcard";
+			productReference = D1EDCEEC7FF623AE26423AE9F2FDD051 /* Pods_blinkcard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A35B702D709EA37681B6545A4E1EF1B /* CardScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B446CDB89EA118308BCC3520BAFBC070 /* Build configuration list for PBXNativeTarget "CardScan" */;
+			buildPhases = (
+				A9641A6A35DDF6C3C5EAA489AA628702 /* Headers */,
+				9E55D1B3BCAB869C010ADDC10A3121CB /* Sources */,
+				B0142DA744904405AA5FE0CB52AAC3F6 /* Frameworks */,
+				7A825D3C65C2100CA549002CDCB6ACDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardScan;
+			productName = CardScan;
+			productReference = 704FD45B9A3CEB394F814C7DA9401DB5 /* CardScan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4CE092B888EEDCFB62CC2CB403D8F154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A35B702D709EA37681B6545A4E1EF1B /* CardScan */,
+				7A1C8F08E55F85266691CD003FBAA5FC /* PayCardsRecognizer */,
+				2DE3A213BC276F32BA58662A737EEB2F /* Pods-blinkcard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A825D3C65C2100CA549002CDCB6ACDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A65B1408EB250FC3358ADD8C928728 /* Assets.xcassets in Resources */,
+				8E4450A85DA74D0E8C308B6E4B8FED39 /* CardScan.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65D4E02C069C6B0FEDB814567228CA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D7C4F8250DCF647645077C6D7CCB80A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3769ACF53DA691522BC5F2B6CD1BFBB1 /* Pods-blinkcard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E55D1B3BCAB869C010ADDC10A3121CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B82220D514B5E106F75C14FC5AB8286 /* CardScan-dummy.m in Sources */,
+				13A44EF1F6B380838BC63543981C3AFA /* CornerView.swift in Sources */,
+				9DA30827305B9F86BD245A1240C25CC3 /* CreditCardUtils.swift in Sources */,
+				9F828B40493A1ACC7DF0CDF2AB505633 /* DetectedBox.swift in Sources */,
+				67A5348C83554BB49DE4D60970031A6E /* Expiry.swift in Sources */,
+				96F9A921C7F989480733C4A690865FEA /* FindFour.mlmodel in Sources */,
+				5D30C57383C15347F68B8B981F79A708 /* FindFourOcr.swift in Sources */,
+				CBEAABCD9D434FA0E5C08DE09B965A2D /* FourRecognize.mlmodel in Sources */,
+				1987E5ADB944AE43C9568AD10657C16F /* ModelOutputExtensions.swift in Sources */,
+				DA8D51D963A0FD3BAE36F55E1CC52A83 /* Ocr.swift in Sources */,
+				9D5DA8AFE5EE609731F80AA0B3B5250D /* PostDetectionAlgorithm.swift in Sources */,
+				13AD39DFFDA7AA827C1CEDD6A39B7D5B /* PredictionResult.swift in Sources */,
+				44C597CD434F5EB3E86D57F3682A0C1E /* PreviewView.swift in Sources */,
+				0426B51AD48CAE22DDB8FA0C17A959CB /* RecognizedDigits.swift in Sources */,
+				54F9865BCE5985E482A457E7D5A18A07 /* RecognizeNumbers.swift in Sources */,
+				5129405534F7FEC29D3A44DEB17B4A61 /* ScanStats.swift in Sources */,
+				9551A885A6FB2AF78A905E7824ABD57A /* ScanViewController.swift in Sources */,
+				845DA83BC5D8A69B7ECEC7808A413C65 /* Torch.swift in Sources */,
+				F5E9A561313BD72CFFFC31560E48FB4C /* UIImage+pixelBuffer.swift in Sources */,
+				F9EA5143118537188BD41A644769D47D /* VideoFeed.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABAC07803ED79F0F57E9ED6237AE9A92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayCardsRecognizer;
+			target = 7A1C8F08E55F85266691CD003FBAA5FC /* PayCardsRecognizer */;
+			targetProxy = 1FCFBE717AD1C65BB628A62A1B448101 /* PBXContainerItemProxy */;
+		};
+		B2F5392378A3BC3EFB925A122742CF55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CardScan;
+			target = 7A35B702D709EA37681B6545A4E1EF1B /* CardScan */;
+			targetProxy = FE992681759AD2198B1E859A5BED458E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03ADEA3849F028EB49642F5A62ADECA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515E5AD22D242204A7705B6D1995F256 /* PayCardsRecognizer.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442F36BFD894D17ACD398134876DB784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03EE86B994D57C23D71A7AA0E33501A /* Pods-blinkcard.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-blinkcard/Pods-blinkcard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-blinkcard/Pods-blinkcard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E2F0957E6C5B7A790003722AAD2FF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515E5AD22D242204A7705B6D1995F256 /* PayCardsRecognizer.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3A077FF20452315A773F20917EE768B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEFDB093A06CEFD27D1BE5D3D4B8990 /* CardScan.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CardScan/CardScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CardScan/CardScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CardScan/CardScan.modulemap";
+				PRODUCT_MODULE_NAME = CardScan;
+				PRODUCT_NAME = CardScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC07AD2920727B70359173C13DCC95F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27C0F73A1A31193D7794FEB1EEA90C3 /* Pods-blinkcard.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-blinkcard/Pods-blinkcard-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-blinkcard/Pods-blinkcard.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC421D54DFB7271E7AB40C7CB0832D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEFDB093A06CEFD27D1BE5D3D4B8990 /* CardScan.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CardScan/CardScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CardScan/CardScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CardScan/CardScan.modulemap";
+				PRODUCT_MODULE_NAME = CardScan;
+				PRODUCT_NAME = CardScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8496E2110620B18BFBEC20BF891B3739 /* Build configuration list for PBXAggregateTarget "PayCardsRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E2F0957E6C5B7A790003722AAD2FF9C /* Debug */,
+				03ADEA3849F028EB49642F5A62ADECA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A732D720F5C1EF4CB08B8DD39016107B /* Build configuration list for PBXNativeTarget "Pods-blinkcard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC07AD2920727B70359173C13DCC95F8 /* Debug */,
+				442F36BFD894D17ACD398134876DB784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B446CDB89EA118308BCC3520BAFBC070 /* Build configuration list for PBXNativeTarget "CardScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC421D54DFB7271E7AB40C7CB0832D71 /* Debug */,
+				D3A077FF20452315A773F20917EE768B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

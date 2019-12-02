@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7A119132393FF5E003D1917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A119122393FF5E003D1917 /* AppDelegate.swift */; };
+		A7A119152393FF5E003D1917 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A119142393FF5E003D1917 /* SceneDelegate.swift */; };
+		A7A119172393FF5E003D1917 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A119162393FF5E003D1917 /* ContentView.swift */; };
+		A7A119192393FF5F003D1917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A119182393FF5F003D1917 /* Assets.xcassets */; };
+		A7A1191C2393FF5F003D1917 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A1191B2393FF5F003D1917 /* Preview Assets.xcassets */; };
+		A7A1191F2393FF5F003D1917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A1191D2393FF5F003D1917 /* LaunchScreen.storyboard */; };
+		A7A1192823940029003D1917 /* RecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1192723940029003D1917 /* RecognizerViewController.swift */; };
+		A7A1192A2394011F003D1917 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A119292394011F003D1917 /* Global.swift */; };
+		A7A1192C2394020C003D1917 /* CardScanIntegratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1192B2394020C003D1917 /* CardScanIntegratedViewController.swift */; };
+		A7A1192F23940734003D1917 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1192E23940734003D1917 /* Card.swift */; };
+		A7A1193523940C15003D1917 /* CustomizedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1193423940C15003D1917 /* CustomizedInfo.swift */; };
+		A7A1194423944C71003D1917 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1194323944C71003D1917 /* ImagePicker.swift */; };
+		A7A1194623944CEE003D1917 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1194523944CEE003D1917 /* ImagePickerView.swift */; };
+		A7A1194823945A4E003D1917 /* TitleAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1194723945A4E003D1917 /* TitleAndImageView.swift */; };
+		A7A1194A23945A74003D1917 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1194923945A74003D1917 /* CardView.swift */; };
+		A7A1194C23945AA6003D1917 /* CardsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1194B23945AA6003D1917 /* CardsMenuView.swift */; };
+		A7A1194E23945BC7003D1917 /* SidebarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1194D23945BC7003D1917 /* SidebarButtonView.swift */; };
+		A7A1195223945D7B003D1917 /* CardsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1195123945D7B003D1917 /* CardsStackView.swift */; };
+		A7A1195423947DF1003D1917 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1195323947DF1003D1917 /* SwipeView.swift */; };
+		A7A1195623948767003D1917 /* AddCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1195523948767003D1917 /* AddCardForm.swift */; };
+		A7A1195823948DE4003D1917 /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1195723948DE4003D1917 /* CameraPicker.swift */; };
+		A7A1195A2394B750003D1917 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A119592394B750003D1917 /* CardDetailView.swift */; };
+		A7A1195C2394BA52003D1917 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1195B2394BA52003D1917 /* CardListView.swift */; };
+		AA0580A8471C38DF68C7E54D /* Pods_my_card_holder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F2C4BA1DBF79CE85702F3F7 /* Pods_my_card_holder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F335102E0C525E4127EBB63 /* Pods-my-card-holder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-card-holder.release.xcconfig"; path = "Target Support Files/Pods-my-card-holder/Pods-my-card-holder.release.xcconfig"; sourceTree = "<group>"; };
+		5F2C4BA1DBF79CE85702F3F7 /* Pods_my_card_holder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_card_holder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1DFE46B4AA54A609A56BAE /* Pods-my-card-holder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my-card-holder.debug.xcconfig"; path = "Target Support Files/Pods-my-card-holder/Pods-my-card-holder.debug.xcconfig"; sourceTree = "<group>"; };
+		A7A1190F2393FF5E003D1917 /* my-card-holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-card-holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A119122393FF5E003D1917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7A119142393FF5E003D1917 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A7A119162393FF5E003D1917 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7A119182393FF5F003D1917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7A1191B2393FF5F003D1917 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7A1191E2393FF5F003D1917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7A119202393FF5F003D1917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A1192723940029003D1917 /* RecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizerViewController.swift; sourceTree = "<group>"; };
+		A7A119292394011F003D1917 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		A7A1192B2394020C003D1917 /* CardScanIntegratedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScanIntegratedViewController.swift; sourceTree = "<group>"; };
+		A7A1192E23940734003D1917 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A7A1193423940C15003D1917 /* CustomizedInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedInfo.swift; sourceTree = "<group>"; };
+		A7A1194323944C71003D1917 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A7A1194523944CEE003D1917 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		A7A1194723945A4E003D1917 /* TitleAndImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndImageView.swift; sourceTree = "<group>"; };
+		A7A1194923945A74003D1917 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A7A1194B23945AA6003D1917 /* CardsMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsMenuView.swift; path = ../../../../../../../.Trash/CardsMenuView.swift; sourceTree = "<group>"; };
+		A7A1194D23945BC7003D1917 /* SidebarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarButtonView.swift; sourceTree = "<group>"; };
+		A7A1195123945D7B003D1917 /* CardsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStackView.swift; sourceTree = "<group>"; };
+		A7A1195323947DF1003D1917 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		A7A1195523948767003D1917 /* AddCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardForm.swift; sourceTree = "<group>"; };
+		A7A1195723948DE4003D1917 /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		A7A119592394B750003D1917 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
+		A7A1195B2394BA52003D1917 /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7A1190C2393FF5E003D1917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0580A8471C38DF68C7E54D /* Pods_my_card_holder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		176494DFD860B2188B875A16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D1DFE46B4AA54A609A56BAE /* Pods-my-card-holder.debug.xcconfig */,
+				4F335102E0C525E4127EBB63 /* Pods-my-card-holder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		697C2DC07E13FF943F1BB004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F2C4BA1DBF79CE85702F3F7 /* Pods_my_card_holder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7A119062393FF5E003D1917 = {
+			isa = PBXGroup;
+			children = (
+				A7A119112393FF5E003D1917 /* my-card-holder */,
+				A7A119102393FF5E003D1917 /* Products */,
+				176494DFD860B2188B875A16 /* Pods */,
+				697C2DC07E13FF943F1BB004 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7A119102393FF5E003D1917 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1190F2393FF5E003D1917 /* my-card-holder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7A119112393FF5E003D1917 /* my-card-holder */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1193623943FDB003D1917 /* Views */,
+				A7A1192D23940729003D1917 /* Model */,
+				A7A119122393FF5E003D1917 /* AppDelegate.swift */,
+				A7A119142393FF5E003D1917 /* SceneDelegate.swift */,
+				A7A119162393FF5E003D1917 /* ContentView.swift */,
+				A7A119182393FF5F003D1917 /* Assets.xcassets */,
+				A7A1191D2393FF5F003D1917 /* LaunchScreen.storyboard */,
+				A7A119202393FF5F003D1917 /* Info.plist */,
+				A7A1191A2393FF5F003D1917 /* Preview Content */,
+				A7A119292394011F003D1917 /* Global.swift */,
+			);
+			path = "my-card-holder";
+			sourceTree = "<group>";
+		};
+		A7A1191A2393FF5F003D1917 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1191B2393FF5F003D1917 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7A1192623940006003D1917 /* CardScanViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1192723940029003D1917 /* RecognizerViewController.swift */,
+				A7A1192B2394020C003D1917 /* CardScanIntegratedViewController.swift */,
+			);
+			path = CardScanViews;
+			sourceTree = "<group>";
+		};
+		A7A1192D23940729003D1917 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1192E23940734003D1917 /* Card.swift */,
+				A7A1193423940C15003D1917 /* CustomizedInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7A1193623943FDB003D1917 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1194223944C62003D1917 /* ImagePickerViews */,
+				A7A1193C2394488D003D1917 /* AddCardViews */,
+				A7A11939239440BA003D1917 /* EnterViews */,
+				A7A1193823944010003D1917 /* CardsMenuViews */,
+				A7A1193723943FF5003D1917 /* CardDetailViews */,
+				A7A1192623940006003D1917 /* CardScanViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7A1193723943FF5003D1917 /* CardDetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7A119592394B750003D1917 /* CardDetailView.swift */,
+				A7A1195B2394BA52003D1917 /* CardListView.swift */,
+			);
+			path = CardDetailViews;
+			sourceTree = "<group>";
+		};
+		A7A1193823944010003D1917 /* CardsMenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1194B23945AA6003D1917 /* CardsMenuView.swift */,
+				A7A1194723945A4E003D1917 /* TitleAndImageView.swift */,
+				A7A1194923945A74003D1917 /* CardView.swift */,
+				A7A1194D23945BC7003D1917 /* SidebarButtonView.swift */,
+				A7A1195123945D7B003D1917 /* CardsStackView.swift */,
+			);
+			path = CardsMenuViews;
+			sourceTree = "<group>";
+		};
+		A7A11939239440BA003D1917 /* EnterViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1195323947DF1003D1917 /* SwipeView.swift */,
+			);
+			path = EnterViews;
+			sourceTree = "<group>";
+		};
+		A7A1193C2394488D003D1917 /* AddCardViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1195523948767003D1917 /* AddCardForm.swift */,
+			);
+			path = AddCardViews;
+			sourceTree = "<group>";
+		};
+		A7A1194223944C62003D1917 /* ImagePickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1194323944C71003D1917 /* ImagePicker.swift */,
+				A7A1194523944CEE003D1917 /* ImagePickerView.swift */,
+				A7A1195723948DE4003D1917 /* CameraPicker.swift */,
+			);
+			path = ImagePickerViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7A1190E2393FF5E003D1917 /* my-card-holder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A119232393FF5F003D1917 /* Build configuration list for PBXNativeTarget "my-card-holder" */;
+			buildPhases = (
+				527C0D7B89412E2B1D178A9B /* [CP] Check Pods Manifest.lock */,
+				A7A1190B2393FF5E003D1917 /* Sources */,
+				A7A1190C2393FF5E003D1917 /* Frameworks */,
+				A7A1190D2393FF5E003D1917 /* Resources */,
+				E88E197C50B5370C9BC7A9C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "my-card-holder";
+			productName = "my-card-holder";
+			productReference = A7A1190F2393FF5E003D1917 /* my-card-holder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7A119072393FF5E003D1917 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Ronnie Li";
+				TargetAttributes = {
+					A7A1190E2393FF5E003D1917 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A7A1190A2393FF5E003D1917 /* Build configuration list for PBXProject "my-card-holder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7A119062393FF5E003D1917;
+			productRefGroup = A7A119102393FF5E003D1917 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7A1190E2393FF5E003D1917 /* my-card-holder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7A1190D2393FF5E003D1917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A1191F2393FF5F003D1917 /* LaunchScreen.storyboard in Resources */,
+				A7A1191C2393FF5F003D1917 /* Preview Assets.xcassets in Resources */,
+				A7A119192393FF5F003D1917 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527C0D7B89412E2B1D178A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-my-card-holder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E88E197C50B5370C9BC7A9C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-my-card-holder/Pods-my-card-holder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-my-card-holder/Pods-my-card-holder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-my-card-holder/Pods-my-card-holder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7A1190B2393FF5E003D1917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A1195A2394B750003D1917 /* CardDetailView.swift in Sources */,
+				A7A1194E23945BC7003D1917 /* SidebarButtonView.swift in Sources */,
+				A7A1195C2394BA52003D1917 /* CardListView.swift in Sources */,
+				A7A1194A23945A74003D1917 /* CardView.swift in Sources */,
+				A7A1192C2394020C003D1917 /* CardScanIntegratedViewController.swift in Sources */,
+				A7A1192823940029003D1917 /* RecognizerViewController.swift in Sources */,
+				A7A1194623944CEE003D1917 /* ImagePickerView.swift in Sources */,
+				A7A1194823945A4E003D1917 /* TitleAndImageView.swift in Sources */,
+				A7A1193523940C15003D1917 /* CustomizedInfo.swift in Sources */,
+				A7A1195423947DF1003D1917 /* SwipeView.swift in Sources */,
+				A7A1192F23940734003D1917 /* Card.swift in Sources */,
+				A7A1195623948767003D1917 /* AddCardForm.swift in Sources */,
+				A7A119132393FF5E003D1917 /* AppDelegate.swift in Sources */,
+				A7A1194C23945AA6003D1917 /* CardsMenuView.swift in Sources */,
+				A7A1194423944C71003D1917 /* ImagePicker.swift in Sources */,
+				A7A119152393FF5E003D1917 /* SceneDelegate.swift in Sources */,
+				A7A1192A2394011F003D1917 /* Global.swift in Sources */,
+				A7A1195223945D7B003D1917 /* CardsStackView.swift in Sources */,
+				A7A1195823948DE4003D1917 /* CameraPicker.swift in Sources */,
+				A7A119172393FF5E003D1917 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7A1191D2393FF5F003D1917 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7A1191E2393FF5F003D1917 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7A119212393FF5F003D1917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7A119222393FF5F003D1917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7A119242393FF5F003D1917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1DFE46B4AA54A609A56BAE /* Pods-my-card-holder.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"my-card-holder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WXPHUMH7W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "my-card-holder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ronnie.li.my-card-holder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7A119252393FF5F003D1917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F335102E0C525E4127EBB63 /* Pods-my-card-holder.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"my-card-holder/Preview Content\"";
+				DEVELOPMENT_TEAM = 5WXPHUMH7W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "my-card-holder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ronnie.li.my-card-holder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7A1190A2393FF5E003D1917 /* Build configuration list for PBXProject "my-card-holder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A119212393FF5F003D1917 /* Debug */,
+				A7A119222393FF5F003D1917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A119232393FF5F003D1917 /* Build configuration list for PBXNativeTarget "my-card-holder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A119242393FF5F003D1917 /* Debug */,
+				A7A119252393FF5F003D1917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7A119072393FF5E003D1917 /* Project object */;
+}

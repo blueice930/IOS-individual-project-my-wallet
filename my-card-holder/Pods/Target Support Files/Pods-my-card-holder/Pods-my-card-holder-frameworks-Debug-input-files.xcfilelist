@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-my-card-holder/Pods-my-card-holder-frameworks.sh
+${PODS_ROOT}/PayCardsRecognizer/Source/PayCardsRecognizer.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
